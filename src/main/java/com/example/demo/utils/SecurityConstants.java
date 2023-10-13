@@ -36,15 +36,13 @@ public class SecurityConstants {
             "/swagger-resources/**"
     };
 
-    public static final String H2_CONSOLE = "/h2-console/**";
-
     /**
      * 开放接口
      */
     public static final String[] SYSTEM_WHITELIST = {
+            "/user/sign-up",
             "/user/login",
-            "/attraction/**"
-
+            "/user/logout"
     };
 
     private SecurityConstants() {

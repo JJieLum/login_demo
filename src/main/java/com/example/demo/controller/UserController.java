@@ -29,7 +29,6 @@ public class UserController {
     private UserService userService;
 
     @PostMapping("/sign-up")
-    @PreAuthorize("hasAnyRole('ROLE_ADMIN')")
     public RestResult<String> signUp(@RequestBody @Valid UserRegisterRequest userRegisterRequest) {
         userService.save(userRegisterRequest);
         return RestResult.success("注册用户成功");

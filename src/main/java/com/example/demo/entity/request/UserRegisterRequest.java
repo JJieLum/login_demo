@@ -20,5 +20,5 @@ public class UserRegisterRequest {
     @NotNull(message = "密码不能为空")
     private String password;
 
-    private Integer phone;
+    private Long phone;
 }

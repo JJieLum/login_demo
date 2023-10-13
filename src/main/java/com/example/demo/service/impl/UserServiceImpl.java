@@ -58,6 +58,7 @@ public class UserServiceImpl implements UserService {
         User user = User.builder()
                 .userName(userRegisterRequest.getUserName())
                 .password(userRegisterRequest.getPassword())
+                .phone(userRegisterRequest.getPhone())
                 .build();
         user.setPassword(bCryptPasswordEncoder.encode(userRegisterRequest.getPassword()));
         userRepository.save(user);
