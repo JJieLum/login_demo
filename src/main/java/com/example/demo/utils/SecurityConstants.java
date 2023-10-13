@@ -42,7 +42,7 @@ public class SecurityConstants {
      * 开放接口
      */
     public static final String[] SYSTEM_WHITELIST = {
-            "/auth/login",
+            "/user/login",
             "/attraction/**"
 
     };
