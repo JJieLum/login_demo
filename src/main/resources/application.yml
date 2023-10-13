@@ -1,0 +1,15 @@
+server:
+  port: 9333
+spring:
+  datasource:
+    name: management
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/travel_ticketing?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+  redis:
+    host: localhost
+    port: 6379
+    password:
+    timeout: 30s
+    database: 0
